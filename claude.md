@@ -12,21 +12,66 @@ The Conferences repository serves as a curated collection of:
 - Links to proof-of-concept code
 - Conference materials from Black Hat, OffensiveCon, and REcon
 
+## Documentation Files
+
+This repository includes comprehensive documentation:
+
+1. **DOCUMENTATION.md** - Main documentation with table of contents, conference details, navigation guide, and usage guidelines
+2. **COMMANDS.md** - Complete command reference with examples for searching, analyzing, and organizing the repository
+3. **INDEX.md** - Full catalog of all 229 presentations organized by conference with annotations for tools/POCs
+4. **STATISTICS.md** - Automated analytics including topic analysis, GitHub repository links, and presentation statistics
+5. **claude.md** (this file) - Context guide for AI assistants
+6. **README.md** - Simple conference list
+
 ## Directory Structure
 
 ```
 /home/user/Conferences/
-├── Black Hat Asia 2023 slides/
-├── Black Hat Europe 2023 slides/
-├── Black Hat USA 2023 slides/
-├── BlackHat ASIA 2024-Slides/
-├── OffensiveCon24 slides/
-├── Offensivecon 2023 slides/
-├── REcon 2023 Slides/
-├── README.md (conference list)
-├── DOCUMENTATION.md (comprehensive docs)
-└── claude.md (this file)
+├── Black Hat Asia 2023 slides/         (36 presentations)
+├── Black Hat Europe 2023 slides/       (38 presentations)
+├── Black Hat USA 2023 slides/          (93 presentations)
+├── BlackHat ASIA 2024-Slides/          (34 presentations)
+├── OffensiveCon24 slides/              (4 presentations)
+├── Offensivecon 2023 slides/           (8 presentations)
+├── REcon 2023 Slides/                  (16 presentations)
+├── README.md                           (conference list)
+├── DOCUMENTATION.md                    (comprehensive documentation)
+├── claude.md                           (this file - AI context)
+├── COMMANDS.md                         (command reference guide)
+├── INDEX.md                            (complete presentation catalog)
+└── STATISTICS.md                       (repository analytics)
 ```
+
+## Repository Statistics Summary
+
+**Total Content:**
+- 229 PDF presentations
+- 18 reference text files
+- 247 total files
+- 2.4GB repository size
+
+**By Conference (Presentations):**
+- Black Hat USA 2023: 93 (40.6%)
+- Black Hat Europe 2023: 38 (16.6%)
+- Black Hat Asia 2023: 36 (15.7%)
+- Black Hat Asia 2024: 34 (14.8%)
+- REcon 2023: 16 (7.0%)
+- OffensiveCon 2023: 8 (3.5%)
+- OffensiveCon 2024: 4 (1.7%)
+
+**Reference Files:**
+- 7 Tool references (_tools.txt)
+- 1 POC reference (_poc.txt)
+- 3 Missing content tracking files
+- 10+ GitHub repositories referenced
+
+**Top Security Topics (by frequency in titles):**
+1. Security & Attacks (31+ mentions)
+2. Android/Mobile (13+ mentions)
+3. Vulnerabilities & Exploiting (24+ mentions)
+4. Data Security (12+ mentions)
+5. Kernel exploitation (8+ mentions)
+6. Windows security (7+ mentions)
 
 ## File Types and Conventions
 

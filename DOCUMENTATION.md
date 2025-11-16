@@ -1,5 +1,33 @@
 # Conferences Repository Documentation
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Repository Structure](#repository-structure)
+- [Statistics](#statistics)
+- [Content Types](#content-types)
+  - [PDF Presentation Slides](#1-pdf-presentation-slides)
+  - [Reference Files (.txt)](#2-reference-files-txt)
+    - [Tool References](#tool-references-_toolstxt)
+    - [Proof of Concept References](#proof-of-concept-references-_poctxt)
+    - [Missing Presentations](#missing-presentations-not_in_listtxt--notinlisttxt)
+- [Conferences Included](#conferences-included)
+  - [Black Hat USA 2023](#black-hat-usa-2023)
+  - [Black Hat Asia 2023 & 2024](#black-hat-asia-2023--2024)
+  - [Black Hat Europe 2023](#black-hat-europe-2023)
+  - [OffensiveCon 2023 & 2024](#offensivecon-2023--2024)
+  - [REcon 2023](#recon-2023)
+- [How to Navigate This Repository](#how-to-navigate-this-repository)
+  - [Finding Presentations by Topic](#finding-presentations-by-topic)
+  - [File Naming Convention](#file-naming-convention)
+  - [Example Presentations by Category](#example-presentations-by-category)
+- [Using Referenced Tools and POCs](#using-referenced-tools-and-pocs)
+- [Missing Content](#missing-content)
+- [Contributing](#contributing)
+- [Additional Resources](#additional-resources)
+- [License and Usage](#license-and-usage)
+- [Command Reference](#command-reference)
+
 ## Overview
 
 This repository serves as a curated archive of security conference presentation slides from leading cybersecurity conferences. The collection includes presentations from offensive security, vulnerability research, exploit development, and various other security domains.
@@ -182,6 +210,29 @@ This repository archives publicly available conference presentations. Users shou
 - Follow responsible disclosure practices
 - Use the information for legitimate security research and education
 - Cite sources appropriately when referencing this work
+
+## Command Reference
+
+See [COMMANDS.md](./COMMANDS.md) for a comprehensive command reference with usage examples for searching, analyzing, and organizing this repository.
+
+Quick command examples:
+
+```bash
+# List all presentations from a specific conference
+ls "Black Hat USA 2023 slides/"*.pdf
+
+# Find presentations about Android
+find . -name "*.pdf" -iname "*android*"
+
+# Count presentations per conference
+for dir in */; do echo "$dir: $(find "$dir" -name "*.pdf" | wc -l)"; done
+
+# List all tool references
+find . -name "*_tools.txt" -exec echo {} \; -exec cat {} \; -exec echo "" \;
+
+# Search for presentations by author
+find . -name "*.pdf" -iname "*daniel*"
+```
 
 ## Changelog
 
